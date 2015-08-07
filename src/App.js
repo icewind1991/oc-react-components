@@ -13,14 +13,14 @@ export class App extends Component {
 
 	render () {
 		// re-structure the content and topbar elements to what css expects
-		let topBar = this.findChild(TopBar);
+		let topBar = this.findChild(ControlBar);
 		let content = this.findChild(Content);
 
 		if (content && topBar) {
 			content = React.cloneElement(content, {topBar: topBar});
 		}
 		let children = this.props.children.filter(element => {
-			return element.type !== TopBar && element.type !== Content;
+			return element.type !== ControlBar && element.type !== Content;
 		});
 		children.push(content);
 		console.log(topBar);
@@ -32,7 +32,7 @@ export class App extends Component {
 	}
 }
 
-export class TopBar extends Component {
+export class ControlBar extends Component {
 	render () {
 		return (
 			<div id="controls">

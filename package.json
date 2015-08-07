@@ -1,0 +1,14 @@
+{
+  "name": "oc-react-components",
+  "version": "0.1.0",
+  "author": "Robin Appelman",
+  "devDependencies": {
+    "react": "^0.13.3",
+    "babel-runtime": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "^0.13.3",
+    "babel-runtime": "^5.8.3"
+  },
+  "main": "build"
+}

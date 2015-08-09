@@ -23,7 +23,6 @@ export class App extends Component {
 			return element.type !== ControlBar && element.type !== Content;
 		});
 		children.push(content);
-		console.log(topBar);
 		return (
 			<div id="content" role="main" className={"app-" + this.props.appId}>
 				{children}

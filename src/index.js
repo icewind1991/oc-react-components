@@ -1,4 +1,4 @@
 import {SideBar, Entry, Separator} from './SideBar.js';
-import {App, Content, TopBar} from './App.js';
+import {App, Content, ControlBar} from './App.js';
 
-export {SideBar, Entry, Separator, App, Content, TopBar};
+export {SideBar, Entry, Separator, App, Content, ControlBar};

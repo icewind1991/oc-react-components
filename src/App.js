@@ -2,6 +2,9 @@ import React, {Component} from 'react/addons';
 
 export class App extends Component {
 	findChild (type) {
+		if (!this.props.children.reduce) {
+			return null;
+		}
 		return this.props.children.reduce((topBar, element)=> {
 			if (element.type === type) {
 				return element;

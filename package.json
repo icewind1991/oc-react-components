@@ -1,6 +1,6 @@
 {
   "name": "oc-react-components",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Robin Appelman",
   "devDependencies": {
     "react": "^0.13.3",

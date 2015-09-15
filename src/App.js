@@ -3,8 +3,8 @@ import React, {Component} from 'react/addons';
 export class App extends Component {
 	findChild (type) {
 		if (
-			!this.props.children
-			!this.props.children.reduce
+			!this.props.children ||
+			!this.props.children.reduce ||
 			!this.props.children.reduce.call
 		) {
 			return null;

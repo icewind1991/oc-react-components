@@ -48,7 +48,7 @@ export class Settings extends Component {
 	render () {
 		const title = (this.props.title) ? this.props.title : 'Settings';
 		const style = {
-			display: (this.state.show) ? 'none' : 'block'
+			display: (this.state.show) ? 'block' : 'none'
 		};
 
 		return (

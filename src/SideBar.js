@@ -19,7 +19,12 @@ export class Entry extends Component {
 		var className = this.props.icon ? 'icon-' + this.props.icon : '';
 		return (
 			<li className={this.props.className||''}>
-				<a className={className} onClick={this.props.onClick||(()=>{})}>
+				<a className={className} onClick={(e)=>{
+					e.preventDefault();
+					if(this.props.onClick) {
+						this.props.onClick(e);
+					}
+				}}>
 					{this.props.children}
 				</a>
 			</li>

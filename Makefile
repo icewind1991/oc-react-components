@@ -1,2 +1,2 @@
 babel:
-	babel src --out-dir build 
+	node_modules/.bin/babel src --out-dir build 
